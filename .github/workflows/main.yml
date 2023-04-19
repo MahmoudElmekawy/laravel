@@ -18,9 +18,9 @@ jobs:
       - name: "Login to Docjer Hub"
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
       - name: "Build docker image"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/laravel_task .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/myimage .
       - name: "pushing docker image"
-        run: docker push ${{ secrets.DOCKER_USERNAME}}/laravel_task
+        run: docker push ${{ secrets.DOCKER_USERNAME}}/myimage
 
       
     
