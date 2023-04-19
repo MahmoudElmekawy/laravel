@@ -15,12 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: "Login to Docjer Hub"
+      - name: "Login to Docker Hub"
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
       - name: "Build docker image"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/myimage .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/myimage299 .
       - name: "pushing docker image"
-        run: docker push ${{ secrets.DOCKER_USERNAME}}/myimage
+        run: docker push ${{ secrets.DOCKER_USERNAME}}/myimage299
 
       
     
