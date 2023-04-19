@@ -1,1 +1,26 @@
+on:
+  push:
+    branches:
+      - master
 
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+
+
+    steps:
+  
+      - uses: actions/checkout@v3
+
+      - name: "Login to Docjer Hub"
+        run: docker login --username ${{ secrets.USER_TOKEN}}  --password ${{ secrets.PASSWORD_TOKEN }}
+
+      - name: "Building docker image"
+        run: docker build -t mahmoud2992002/laravel_task .
+      
+      - name: "Pushing to Docker Hub"
+        run: docker push mahmoud2992002/task
