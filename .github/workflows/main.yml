@@ -23,4 +23,4 @@ jobs:
         run: docker build -t mahmoud2992002/laravel_task .
       
       - name: "Pushing to Docker Hub"
-        run: docker push mahmoud2992002/task
+        run: docker push mahmoud2992002/laravel_task
