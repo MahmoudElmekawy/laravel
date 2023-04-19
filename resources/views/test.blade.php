@@ -11,6 +11,5 @@
     {{$student}}   
     <br>
    @endforeach
-   <!-- done -->
 </body>
 </html>
