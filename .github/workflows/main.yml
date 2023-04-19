@@ -14,13 +14,10 @@ jobs:
 
     steps:
   
-      build:
-        runs-on: ubuntu-latest
 
-
-        steps:
-          - name: 'testing git hub action'
-            run: pwd
-
-          - name: 'testing princing'
-            run: echo Ahmed
+      - name: "Login to Docjer Hub"
+        run: pwd
+      - name: "Building docker image"
+        run: echo ahmed
+      
+    
