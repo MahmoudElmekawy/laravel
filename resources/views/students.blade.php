@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Laravel Task 1</h1>
    @foreach ($Students as $student)
-    {{$student}}   
+    <h3>{{$student}} </h3>  
     <br>
    @endforeach
 </body>

@@ -21,5 +21,10 @@ Route::get('/students', function () {
   $arr=[
      'Students' =>['mahmoud','omar','ahmed','ali']
   ];
-  return view('test',$arr);
+  return view('students',$arr);
+});
+Route::get('/', function () {
+ 
+
+  return view('welcome');
 });
